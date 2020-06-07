@@ -14,6 +14,8 @@ This project serves as a informative tool so that people can make their own deci
 
 Below you can see a screenshot of the interactive web map. On the bottom is a slider which displays the date the choropleth is display the statistics of. On the left side is a panel which displays radio buttons which allow the user to change which statistic is being displayed. The user can click on a specific county to view all the statistics for that date for that county. The right panel displays all the statistics of the the selected county.
 
+![Screenshot of map](/img/screenshot1.png)
+
 The main audience for this map is the average person. I built this to allow myself and others to see how the virus has spread through the country. Every day there are new news stories and new data or research coming out around COVID-19. This map is an attempt to allow anyone to understand a large amount of information and come up with their own findings and ideas.
 
 ## Architecture
@@ -96,7 +98,9 @@ I made this map a consistent color scheme and tried to keep the effects minimal.
  - Ensuring all counties data are being displayed accurately and there are no bugs with this.
  - Building in a timeline view for Washington State which shows some important information and dates.
 
-The application not being responsive is at the top of the priority list as well as doing some testing and getting rid of bugs.
+The application not being responsive is at the top of the priority list as well as doing some testing and getting rid of bugs. You can see how the controls completely block the map while viewing it on mobile.
+
+![Mobile screenshot](/img/mobile_screenshot.png)
 
 Not being an academically rigorous map, I have chosen to omit things like a north arrow and a scale bar, as I do not think that those are necessary most of the time. 
 
