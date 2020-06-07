@@ -28,21 +28,26 @@ The whole project uses the following libraries/services:
  - Netlify
 
 The React application imports the JSON data in the following manner:
+
 ```javascript
     import USCounties from "../data/counties.json";
     import ProcessedData from "../data/processed-data-per-county.json";
 ```
+
 `USCounties` is the polygons which represent the actual counties to be displayed. This is stored in a GEOJSON format. This county polygon data was downloaded from the US Census bureau. The initial file size was around 202MB, which is way too big for a web application. I tried doing some basic simplification of the polygons, but upon inspection found that there were these slivers of empty space because the simplification was not topologically aware. After doing some research I found that QGIS with GRASS Generalization was a good way to do polygon simplification while keeping topology. I set the tolerance on GRASS Generalization to 0.01 degrees and ran the script, this resulted in a file size of about 6MB. This is much better for a web application and would not take too long to download while still having a good amount of details. In order for Leaflet to not show it's own slivers inbetween polygons as it ran its own simplification upon zoom in/out the smoothFactor had to be set as seen below.
 
+```javascript
     <GeoJSON
 	  data={USCounties}
 	  style={(layer) => this.style(layer)}
 	  smoothFactor={0.25}
 	  stroke={false}
     />
+```
 
 The `ProcessedData` object contains all of the computed statistics for every date and every county. The data has been constructed in such a way to allow for efficient access by the client so that it is not sluggish and eat up lots of processing power. The structure of the data is:
 
+```JSON
     {
       Date1: {
 	      CountyID: {county stats},
@@ -54,6 +59,7 @@ The `ProcessedData` object contains all of the computed statistics for every dat
       },
       ...
     }
+```
 
 This allows the application to simply get all the county data with the selected date and then select the specific county statistics by the countyID which is on the GEOJSON polygon data for the counties. This use of nested maps allows for very fast retrieval of information. There are about 3000 counties in the US, so efficiency with rendering all of the data is important.
 
