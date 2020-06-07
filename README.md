@@ -47,7 +47,7 @@ The React application imports the JSON data in the following manner:
 
 The `ProcessedData` object contains all of the computed statistics for every date and every county. The data has been constructed in such a way to allow for efficient access by the client so that it is not sluggish and eat up lots of processing power. The structure of the data is:
 
-```JSON
+```json
     {
       Date1: {
 	      CountyID: {county stats},
