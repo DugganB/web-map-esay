@@ -1,6 +1,9 @@
 # COVID-19 Temporal Web Map Analysis 
+
 By: Duggan Burke
+
 GEOG 458
+
 June 6, 2020
 
 ## Intro
@@ -10,8 +13,6 @@ This map was created by me, I will be giving an overview of the map and some of 
 This project serves as a informative tool so that people can make their own decisions about COVID-19 and see how the disease has spread through the country. No other web maps have been made for displaying the county level data over time. Many such maps have been made which show live information to the viewer, but not the past information. With a disease you need to understand how it spreads and it's history to make effective policy choices. 
 
 Below you can see a screenshot of the interactive web map. On the bottom is a slider which displays the date the choropleth is display the statistics of. On the left side is a panel which displays radio buttons which allow the user to change which statistic is being displayed. The user can click on a specific county to view all the statistics for that date for that county. The right panel displays all the statistics of the the selected county.
-
-.
 
 The main audience for this map is the average person. I built this to allow myself and others to see how the virus has spread through the country. Every day there are new news stories and new data or research coming out around COVID-19. This map is an attempt to allow anyone to understand a large amount of information and come up with their own findings and ideas.
 
