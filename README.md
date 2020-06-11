@@ -8,7 +8,7 @@ June 6, 2020
 
 ## Intro
 
-This map was created by me, I will be giving an overview of the map and some of the goals I set out to accomplish during this project. I am in no way affiliated with any biased groups besides being a student at the UW. The web map can be found at [covid.dugganb.dev](www.covid.dugganb.dev).
+This map was created by me, I will be giving an overview of the map and some of the goals I set out to accomplish during this project. I am in no way affiliated with any biased groups besides being a student at the UW. The web map can be found at [covid.dugganb.dev](https://www.covid.dugganb.dev).
 
 This project serves as a informative tool so that people can make their own decisions about COVID-19 and see how the disease has spread through the country. No other web maps have been made for displaying the county level data over time. Many such maps have been made which show live information to the viewer, but not the past information. With a disease you need to understand how it spreads and it's history to make effective policy choices. 
 
